@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Customizer</title>
+    <base href="/blog-customizer/">
+    <script>
+      // Перенаправление на index.html для SPA
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+      location.replace('/blog-customizer/');
+    </script>
+  </head>
+  <body>
+    <p>Перенаправление...</p>
+  </body>
+</html>
